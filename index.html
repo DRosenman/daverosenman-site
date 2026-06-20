@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dave Rosenman</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <span class="nav-name">Dave Rosenman</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#packages">Open Source</a></li>
+      <li><a href="#physics">Physics</a></li>
+      <li><a href="#mathematics">Mathematics</a></li>
+    </ul>
+    <div class="nav-icons">
+      <a href="https://github.com/drosenman" target="_blank" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577v-2.165c-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.467-1.332-5.467-5.93 0-1.31.468-2.38 1.235-3.22-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 0 1 3-.404c1.02.005 2.047.138 3 .404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.233 1.91 1.233 3.22 0 4.61-2.807 5.625-5.479 5.92.43.372.823 1.102.823 2.222v3.293c0 .322.218.694.825.576C20.565 21.796 24 17.298 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/dave-rosenman/" target="_blank" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M20.447 20.452H16.89v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a1.98 1.98 0 0 1-1.981-1.98c0-1.094.887-1.981 1.981-1.981s1.98.887 1.98 1.981-.886 1.98-1.98 1.98zm1.957 13.019H3.379V9h3.915v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+      </a>
+    </div>
+  </nav>
+
+  <section id="about">
+    <div class="about-inner">
+      <img src="profile.png" alt="Dave Rosenman" class="profile-photo" />
+      <div class="about-text">
+        <h1>Hi, I'm Dave Rosenman</h1>
+        <p>I'm a Data Analytics Engineer with 9 years of experience building end-to-end data solutions in healthcare and environmental science. I specialize in bridging complex backend engineering with intuitive, user-facing applications — turning fragmented, manual workflows into automated, data-driven systems.</p>
+        <p>I'm currently pursuing an MS in Computer Science (AI specialization) at Georgia Tech, and hold undergraduate degrees in Physics (B.S.) and Political Science (B.A.). Outside of work I'm passionate about open source package development, computational physics, and mathematics.</p>
+        <a href="mailto:dave.rosenman.data@gmail.com" class="btn">Get in touch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="packages">
+    <h2>Open Source Packages</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>orbitr</h3>
+        <p>A lightweight N-body gravitational simulator for R. Simulate planetary orbits, binary star systems, or chaotic three-body problems in a few lines of pipe-friendly code. Ships a compiled C++ engine via Rcpp with a pure-R fallback.</p>
+        <a href="https://orbit-r.com/" target="_blank">orbit-r.com →</a>
+      </div>
+      <div class="card">
+        <h3>sqlserverconnect</h3>
+        <p>A minimal, user-friendly R interface for connecting to Microsoft SQL Server.</p>
+        <a href="https://drosenman.github.io/sqlserverconnect/" target="_blank">View on GitHub →</a>
+      </div>
+      <div class="card">
+        <h3>polars_mssql</h3>
+        <p>A Python package for importing and exporting tables between Polars and Microsoft SQL Server.</p>
+        <a href="https://github.com/drosenman/polars_mssql" target="_blank">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="physics">
+    <h2>Physics</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Absurd Physics: Gravity on an Infinite Flat World</h3>
+        <p>What would gravity feel like on an infinitely wide, perfectly flat slab of rock? Using symmetry arguments and a Newtonian derivation, this article shows why gravity above such a world stays constant with altitude — no orbits, no escape velocity, and none of our usual spherical-planet intuition.</p>
+        <a href="https://figshare.com/articles/online_resource/Absurd_Physics_What_Gravity_Would_Be_Like_on_an_Infinite_Flat_World/32667084" target="_blank">Read more →</a>
+      </div>
+      <div class="card">
+        <h3>Absurd Physics: An Atmosphere with Constant Gravity</h3>
+        <p>If gravity never weakens with altitude, what happens to the atmosphere? Building on Episode 1, this piece uses hydrostatic equilibrium and the ideal gas law to show that the atmosphere thins exponentially but never truly ends — no edge, no boundary, just sky fading forever upward.</p>
+        <a href="https://figshare.com/articles/online_resource/Absurd_Physics_What_Would_an_Atmosphere_Be_Like_on_a_World_with_Constant_Gravity_/32667090?file=65527080" target="_blank">Read more →</a>
+      </div>
+      <div class="card">
+        <h3>Absurd Physics: What Happens When You Put the Internet in a Microwave?</h3>
+        <p>A microwave oven is an imperfect Faraday cage. Using real Wi-Fi speed tests at 2.4 GHz and 5 GHz, this article connects a kitchen appliance to electromagnetism concepts: metal shielding, waveguide cutoff, evanescent decay, and signal attenuation.</p>
+        <a href="https://figshare.com/articles/online_resource/Absurd_Physics_What_Happens_When_You_Put_the_Internet_in_a_Microwave_/32667096?file=65527095" target="_blank">Read more →</a>
+      </div>
+      <div class="card">
+        <h3>Absurd Physics: How Does the Internet Get in Your House?</h3>
+        <p>Tracing the internet signal backward — from Wi-Fi radio waves, to the router and modem, to buried cables under the street. Covers why fiber optic beats coaxial cable, how total internal reflection traps light in glass, and why mesh Wi-Fi often outperforms one powerful router.</p>
+        <a href="https://figshare.com/articles/online_resource/Absurd_Physics_How_Does_the_Internet_Get_in_Your_House/32678418?file=65562720" target="_blank">Read more →</a>
+      </div>
+      <div class="card">
+        <h3>Radioactive Decay &amp; Dating Rocks on the Moon</h3>
+        <p>An exploration of radioactive decay physics and how it's used to determine the age of lunar rocks.</p>
+        <a href="https://figshare.com/articles/online_resource/Radioactive_Decay_And_Isochron_Dating_of_Moon_Rocks/32746077" target="_blank">Read more →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="mathematics">
+    <h2>Mathematics</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Informal Derivation of Euler's Identity</h3>
+        <p>Starting from Taylor series expansions for exponential, sine, and cosine functions, this paper shows how these ideas connect in the world of complex numbers and lead to a surprisingly elegant relationship between some of mathematics's most important constants.</p>
+        <a href="https://figshare.com/articles/online_resource/Informal_Derivation_of_Euler_s_Identity/32746095" target="_blank">Read more →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Dave Rosenman</p>
+  </footer>
+
+</body>
+</html>

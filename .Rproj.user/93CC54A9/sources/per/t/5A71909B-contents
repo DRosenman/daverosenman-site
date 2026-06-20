@@ -1,0 +1,34 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Dave Rosenman"
+  site-url: "https://daverosenman.com"
+  description: "Open source software, data tools, physics projects, and Absurd Physics articles by Dave Rosenman."
+
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: projects.qmd
+        text: Open Source Packages
+      - href: physics.qmd
+        text: Physics
+      - href: about.qmd
+        text: About
+    right:
+      - icon: github
+        href: https://github.com/drosenman
+      - icon: linkedin
+        href: https://www.linkedin.com/in/dave-rosenman/
+
+  page-footer:
+    left: "© 2026 Dave Rosenman"
+    right: "Built with Quarto"
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    css: styles.css
