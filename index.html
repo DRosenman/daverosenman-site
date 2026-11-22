@@ -60,8 +60,7 @@
         <p><em>Simulating Planets, Binary Stars, Chaotic Systems, and the N-Body Problem with orbitr.</em> A hands-on guide to the orbitr package for physics students and anyone serious about orbital dynamics, covering where the numerical and physical methods come from, such as Velocity Verlet, alongside the code that runs them. Free to read online.</p>
         <div class="card-links">
           <a href="https://book.orbit-r.com/" target="_blank">Read free online →</a>
-          <a href="https://leanpub.com/orbital-mechanics-with-r" target="_blank">PDF / iPad / Kindle →</a>
-          <a href="https://www.lulu.com/shop/dave-rosenman/orbital-mechanics-with-r/paperback/product-57nq7we.html" target="_blank">Paperback →</a>
+          <a href="orbital-mechanics-with-r.pdf" download>Download the full PDF (free) →</a>
         </div>
       </div>
     </div>
@@ -191,6 +190,17 @@
   <footer>
     <p>© 2026 Dave Rosenman</p>
   </footer>
+
+  <script>
+    // Arriving from another page with a #section link: jump straight to it
+    // (smooth scrolling on page load can stop partway).
+    if (location.hash) {
+      addEventListener("load", () => {
+        const target = document.querySelector(location.hash);
+        if (target) target.scrollIntoView({ behavior: "instant" });
+      });
+    }
+  </script>
 
 </body>
 </html>
