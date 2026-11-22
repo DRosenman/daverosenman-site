@@ -265,6 +265,55 @@ footer {
   border-top: 1px solid var(--border);
 }
 
+/* FAMILY PAGE */
+a.nav-name {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.family-intro {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.family-intro h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+.family-intro .tagline {
+  color: var(--accent);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.family-intro p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.family-hero {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 1.5rem;
+}
+
+.photo-grid {
+  columns: 3 260px;
+  column-gap: 1rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  break-inside: avoid;
+  display: block;
+}
+
 /* RESPONSIVE */
 @media (max-width: 640px) {
   .about-inner {
